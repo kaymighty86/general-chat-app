@@ -1,0 +1,22 @@
+.MessageInputSectionWrapper{
+    position: fixed;
+    bottom: 0px;
+    padding: 0.7rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background-color: var(--accent);
+}
+
+.InputBox{
+    resize: none;
+    height: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: height 0.1s linear;
+}
+
+.InputBox:focus{
+    height: 5rem;
+}

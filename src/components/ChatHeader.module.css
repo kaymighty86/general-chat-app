@@ -1,0 +1,13 @@
+.chatHeader{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.7rem 0.4rem;
+    font-size: large;
+}
+
+.chatSubject{
+    font-size: large;
+    padding-left: 0.5rem;
+}

@@ -1,0 +1,15 @@
+.chatViewWrapper{
+    width: 80%;
+    max-width: 28rem;
+    height: 100%;
+    max-height: 37rem;
+    background-color: white;
+    box-shadow: 0px 1rem 1rem rgba(0,0,0,0.3);
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}

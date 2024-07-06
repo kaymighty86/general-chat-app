@@ -1,0 +1,26 @@
+.button{
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    border-bottom: 0.2rem solid var(--muted);
+    background-color: var(--secondary);
+    color: var(--text);
+    font-size: small;
+    margin: 0px 0.6rem;
+}
+
+.button>div{
+    display: inline-block;
+    vertical-align: top;
+    transform: translateY(10%);
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button:active{
+    border: none;
+    transform: translateY(0.2rem);
+}
+
