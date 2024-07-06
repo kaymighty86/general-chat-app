@@ -4,6 +4,7 @@ import { useState, useContext } from "react";
 
 import ChatHeader from "./ChatHeader";
 import MessageInput from "./MessageInput";
+import ConversationView from "./conversation/ConversationView";
 import { chatSettingsContext } from "./contexts/chatSettingsContext";
 
 export default function ChatView(){
@@ -28,6 +29,7 @@ export default function ChatView(){
     return (
         <div className={Styles.chatViewWrapper}>
             <ChatHeader />
+            <ConversationView chatHistory={chatHistory}/>
             <MessageInput onSend={sendMessage}/>
         </div>
     )

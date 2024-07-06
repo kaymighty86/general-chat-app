@@ -1,20 +1,22 @@
 .MessageInputSectionWrapper{
-    position: fixed;
+    position: sticky;
     bottom: 0px;
     padding: 0.7rem 0.5rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     box-sizing: border-box;
-    background-color: var(--accent);
+    background-color: var(--muted);
 }
 
 .InputBox{
-    resize: none;
+    resize: none;/*this is a textarea style attribute*/
     height: 3rem;
     width: 100%;
-    box-sizing: border-box;
+    border: 1px solid var(--primary);
+    box-shadow: inset 0px 0.2rem 0.2rem rgba(0,0,0,0.2);
     transition: height 0.1s linear;
+    box-sizing: border-box;
 }
 
 .InputBox:focus{

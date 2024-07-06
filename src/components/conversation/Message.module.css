@@ -1,0 +1,28 @@
+.messageComponent{
+    padding: 0.5rem 0.2rem;
+}
+
+.messageComponent.firstPerson{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.messageComponent.secondPerson{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.messageBubble.firstPerson{
+    background-color: var(--accent);
+}
+
+.messageBubble.secondPerson{
+    background-color: var(--accent2);
+}
+
+.userPic{
+    vertical-align: bottom;
+    margin: 0.2rem;
+}

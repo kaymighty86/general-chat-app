@@ -1,7 +1,7 @@
 .textArea{
-    border: 1px solid var(--muted);
+    /* border: 1px solid var(--muted); */
     border-radius: 0.4rem;
-    padding: 0.25rem;
+    padding: 0.25rem 0.5rem;
     font-size: small;
     font-family: "Nunito", sans-serif;
     color: var(--text);
@@ -11,7 +11,7 @@
 
 .textArea:focus{
     border-width: 0px;
-    outline: 2px solid var(--muted);
+    outline: 2px solid var(--primary);
 }
 
 .textArea::placeholder{
