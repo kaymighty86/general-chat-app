@@ -1,8 +1,13 @@
 import { createContext, useState } from "react";
 
+import user1_profileImage from "../../assets/users_pics/user1.png";
+import user2_profileImage from "../../assets/users_pics/user2.png";
+
 export let chatSettingsContext = createContext({
     currentSender: "user1",
-    swtichSender: ()=>{}
+    switchSender: ()=>{},
+    user1Image: undefined,
+    user2Image: undefined
 });
 
 export function ChatSettings({children}){
@@ -22,7 +27,9 @@ export function ChatSettings({children}){
 
     const chatSettings = {
         currentSender: sender,
-        switchSender
+        switchSender,
+        user1Image: user1_profileImage,
+        user2Image: user2_profileImage
     }
 
     return(

@@ -5,9 +5,9 @@
   --primary: #ffc731;
   --secondary: white;
   --text: #191818;
-  --accent: #e163c4;
+  --accent: #ee8ed8;
   --accent2: #c6e1ce;
-  --muted: #bfc6cc;
+  --muted: #cdd2d7;
 }
 
 body{
@@ -39,4 +39,24 @@ h2{
 
 button{
   font-size: small;
+}
+
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(228, 231, 234);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(166, 171, 174);
+  border: 2px solid rgb(228, 231, 234);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(148, 152, 154);
 }

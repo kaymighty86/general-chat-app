@@ -5,8 +5,9 @@
     font-size: small;
     font-family: "Nunito", sans-serif;
     color: var(--text);
-    min-width: 24rem;
-    min-height: 3rem;
+    /* min-width: 24rem; */
+    /* min-height: 3rem; */
+    box-sizing: border-box;
 }
 
 .textArea:focus{
@@ -15,6 +16,19 @@
 }
 
 .textArea::placeholder{
-    color: var(--muted);
+    color: rgb(130, 132, 135);
     font-style: italic;
+}
+
+
+.textArea::-webkit-scrollbar{
+    width: 0.3rem;
+}
+
+.textArea::-webkit-scrollbar-track{
+  visibility: hidden;
+}
+
+.textArea::-webkit-scrollbar-thumb{
+    border: none;
 }

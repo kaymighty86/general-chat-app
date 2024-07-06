@@ -8,7 +8,13 @@ import ConversationView from "./conversation/ConversationView";
 import { chatSettingsContext } from "./contexts/chatSettingsContext";
 
 export default function ChatView(){
-    const [chatHistory, updateChatHistory] = useState([]);
+    const [chatHistory, updateChatHistory] = useState([
+        {
+            sender: "user2",
+            message: "Hello. Welcome to my awesome chat engine.\nYou can chat using both first-person and second-person perspectives (check the options button on the header). \n\nTry sending a message now first!",
+            messageId: `m0`
+        }
+    ]);
     
     const {currentSender} = useContext(chatSettingsContext);
 
@@ -19,8 +25,9 @@ export default function ChatView(){
             return ([
                 ...prevChatHistory,
                 {
-                    sender: currentSender,
-                    message: newMessage
+                    sender: currentSender || "user1",
+                    message: newMessage.trim(),
+                    messageId: `m${prevChatHistory.length}`
                 }
             ]);
         });

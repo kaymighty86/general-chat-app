@@ -10,4 +10,12 @@
 .chatSubject{
     font-size: large;
     padding-left: 0.5rem;
+    display: inline-block;
+}
+
+.settingsContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }

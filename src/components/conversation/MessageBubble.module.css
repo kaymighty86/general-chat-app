@@ -3,7 +3,9 @@
     padding: 0.5rem;
     width:fit-content;
     max-width: 58%;
-    border-top-left-radius: 0.4rem;
-    border-top-right-radius: 0.4rem;
     display: inline-block;
+}
+
+.messageBubble p{
+    white-space: pre-wrap;/*For making it preserve "\n" new line and "\t" tab spaces*/
 }

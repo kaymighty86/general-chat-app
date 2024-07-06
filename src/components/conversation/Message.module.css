@@ -1,25 +1,41 @@
 .messageComponent{
     padding: 0.5rem 0.2rem;
+    animation: messagePopoutAnim 0.2s ease-in;
+}
+
+@keyframes messagePopoutAnim{
+    0%{
+        transform: translateY(2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .messageComponent.firstPerson{
     display: flex;
     flex-direction: row;
+    align-items: end;
     justify-content: end;
 }
 
 .messageComponent.secondPerson{
     display: flex;
     flex-direction: row-reverse;
+    align-items: end;
     justify-content: start;
 }
 
 .messageBubble.firstPerson{
     background-color: var(--accent);
+    border-radius: 0.4rem;
+    border-bottom-right-radius: 0px;
 }
 
 .messageBubble.secondPerson{
     background-color: var(--accent2);
+    border-radius: 0.4rem;
+    border-bottom-left-radius: 0px;
 }
 
 .userPic{

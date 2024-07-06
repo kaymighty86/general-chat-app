@@ -1,5 +1,13 @@
 .conversationView{
     width: 100%;
     height: 100%;
+    /* max-width: 100%; */
+    max-height: fit-content;
     box-sizing: border-box;
+    overflow-y: auto;
+    padding-bottom: 2.4rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column-reverse;/*We're reversing the content becuase this is the only way to make the component activate scroll if child elements starts showing from the "end"*/
+    justify-content: end;
 }
