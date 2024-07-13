@@ -26,15 +26,17 @@
     justify-content: start;
 }
 
+.messageBubble{
+    border-radius: 0.4rem;
+}
+
 .messageBubble.firstPerson{
     background-color: var(--accent);
-    border-radius: 0.4rem;
     border-bottom-right-radius: 0px;
 }
 
 .messageBubble.secondPerson{
     background-color: var(--accent2);
-    border-radius: 0.4rem;
     border-bottom-left-radius: 0px;
 }
 

@@ -7,7 +7,15 @@
     align-items:flex-end;
     justify-content: flex-start;
     box-sizing: border-box;
-    background-color: var(--muted);
+    background-color: #cdd2d7;
+}
+
+.MessageInputSectionWrapper.light{
+    background-color: #cdd2d7;
+}
+
+.MessageInputSectionWrapper.dark{
+    background-color: #4c4e4f;
 }
 
 .InputBox{
@@ -15,9 +23,18 @@
     height: 3rem;
     width: 100%;
     border: 1px solid var(--primary);
+    background-color: white;
     box-shadow: inset 0px 0.2rem 0.2rem rgba(0,0,0,0.2);
     transition: height 0.1s linear;
     box-sizing: border-box;
+}
+
+.InputBox.light{
+    background-color: white;
+}
+
+.InputBox.dark{
+    background-color: rgb(121, 122, 125);
 }
 
 .InputBox:focus{

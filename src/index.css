@@ -1,13 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root{
+  --brandcolor: #ffc731;
   --backgroundImg: url("./assets/general_images/doodle_background.jpg");
-  --primary: #ffc731;
+  --primary: var(--brandcolor);
   --secondary: white;
   --text: #191818;
   --accent: #ee8ed8;
   --accent2: #c6e1ce;
   --muted: #cdd2d7;
+  --scrolltrack: rgb(228, 231, 234);
+  --scrollthumb: rgb(166, 171, 174);
+}
+
+:root[theme="light"]{
+  --primary: var(--brandcolor);
+  --secondary: white;
+  --text: #191818;
+  --accent: #ee8ed8;
+  --accent2: #c6e1ce;
+  --muted: #cdd2d7;
+  --scrolltrack: rgb(228, 231, 234);
+  --scrollthumb: rgb(166, 171, 174);
+}
+
+:root[theme="dark"]{
+  --primary: #77787d;
+  --secondary: rgb(44, 46, 47);
+  --text: #fffafa;
+  --accent: #c365ad;
+  --accent2: #607266;
+  --muted: #9a9b9c;
+  --scrolltrack: #5b5858;
+  --scrollthumb: #d0cece;
 }
 
 body{
@@ -41,6 +66,7 @@ button{
   font-size: small;
 }
 
+/*SCROLL BAR*/
 
 ::-webkit-scrollbar{
   width: 0.5rem;
@@ -48,12 +74,12 @@ button{
 }
 
 ::-webkit-scrollbar-track{
-  background-color: rgb(228, 231, 234);
+  background-color: var(--scrolltrack);
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: rgb(166, 171, 174);
-  border: 2px solid rgb(228, 231, 234);
+  background-color: var(--scrollthumb);
+  border: 2px solid var(--scrolltrack);
   border-radius: 4px;
 }
 

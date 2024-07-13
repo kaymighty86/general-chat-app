@@ -4,9 +4,19 @@
     border: none;
     border-bottom: 0.2rem solid rgb(172, 172, 172);
     background-color: var(--secondary);
-    color: var(--text);
+    color: #191818;
     font-size: small;
     margin-left:0.6rem;
+}
+
+.button.light{
+    border-bottom: 0.2rem solid rgb(172, 172, 172);
+    background-color: var(--secondary);
+}
+
+.button.dark{
+    border-bottom: 0.2rem solid rgb(203, 148, 9);
+    background-color: var(--brandcolor);
 }
 
 .button>div{
