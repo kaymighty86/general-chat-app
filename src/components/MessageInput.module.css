@@ -41,6 +41,14 @@
     height: 5rem;
 }
 
+.InputBox.light::placeholder{
+    color: #7d7d7d
+}
+
+.InputBox.dark::placeholder{
+    color: #d7d5d5
+}
+
 .sendButton{
     vertical-align:middle;
     width: fit-content;
